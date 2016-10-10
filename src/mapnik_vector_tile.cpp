@@ -392,7 +392,7 @@ NAN_METHOD(VectorTile::New)
     }
 
     std::uint32_t tile_size = 4096;
-    std::int32_t buffer_size = 128;
+    std::int32_t buffer_size = 512;
     v8::Local<v8::Object> options = Nan::New<v8::Object>();
     if (info.Length() > 3)
     {
